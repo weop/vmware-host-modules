@@ -1,0 +1,13 @@
+Tweaked to work for for Kernel 5.15
+
+###Quick guide
+----------------------------
+
+  tar -cf vmmon.tar vmmon-only
+  tar -cf vmnet.tar vmnet-only
+  cp -v vmmon.tar vmnet.tar /usr/lib/vmware/modules/source/
+  vmware-modconfig --console --install-all
+
+
+Based on mkubecek's host mods
+https://github.com/mkubecek
